@@ -1,137 +1,471 @@
-
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js"> <!--<![endif]-->
+<html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>CiboVitam - Food, Life</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <link href="css/flexslider.min.css" rel="stylesheet" type="text/css" media="all"/>
-        <link href="css/line-icons.min.css" rel="stylesheet" type="text/css" media="all"/>
-        <link href="css/elegant-icons.min.css" rel="stylesheet" type="text/css" media="all"/>
-        <link href="css/lightbox.min.css" rel="stylesheet" type="text/css" media="all"/>
-        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all"/>
-        <link href="css/theme-blues.css" rel="stylesheet" type="text/css" media="all"/>
-        <link href="css/custom.css" rel="stylesheet" type="text/css" media="all"/>
-        <!--[if gte IE 9]>
-        	<link rel="stylesheet" type="text/css" href="css/ie9.css" />
-		<![endif]-->
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600,700%7CRaleway:700' rel='stylesheet' type='text/css'>
-        <script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" href="img/fav-icon.png" type="image/x-icon" />
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>CiboVitam</title>
+
+        <!-- Icon css link -->
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="vendors/themify-icon/themify-icons.css">
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="vendors/dzsparallaxer/dzsparallaxer.css">
+        <!-- Rev slider css -->
+        <link href="vendors/revolution/css/settings.css" rel="stylesheet">
+        <link href="vendors/revolution/css/layers.css" rel="stylesheet">
+        <link href="vendors/revolution/css/navigation.css" rel="stylesheet">
+        <link href="vendors/animate-css/animate.css" rel="stylesheet">
+
+        <!-- Extra plugin css -->
+        <link href="vendors/magnify-popup/magnific-popup.css" rel="stylesheet">
+        <link href="vendors/bootstrap-selector/bootstrap-select.css" rel="stylesheet">
+        <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+        <link rel="stylesheet" href="vendors/flexslider/flexslider.css">
+        <link rel="stylesheet" href="vendors/bootstrap-datepicker/css/bootstrap-datetimepicker.min.css">
+        <link rel="stylesheet" href="vendors/scroll/jquery.mCustomScrollbar.css">
+        <link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
+
+        <link href="css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/responsive.css">
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
     </head>
     <body>
-    	<div class="loader">
-    		<div class="spinner">
-			  <div class="double-bounce1"></div>
-			  <div class="double-bounce2"></div>
-			</div>
-    	</div>
+        <!-- pre-loader-->
+        <div id="pre-loader">
+            <div id="preload_inner">
+                <div class="spinner">
+                    <div class="double-bounce1"></div>
+                    <div class="double-bounce2"></div>
+                </div>
+            </div>
+        </div>
+        <!-- pre-loader-->
+        <div class="left-side-menu company_web_hid">
+           <div class="close_icon">
+                <span></span>
+                <span></span>
+            </div>
+            <div class="fixed_menu_area">
+                <ul class="side_menu_social">
 
-		<div class="nav-container">
-			<nav class="top-bar overlay-bar">
-				<div class="container">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
 
+                </ul>
+                <!--<a class="company_logo" href="#"><img src="img/CiboVitamLogo.png" alt=""></a>-->
+                <div class="web_menu_inner">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown side_menu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Home</a>
+                        </li>
 
-
-
-					<div class="row nav-menu">
-						<div class="col-md-2 col-sm-3 columns">
-
-							<img class="logo logo-dark" alt="Logo" src="img/logo-dark.png">
-						</div>
-
-						<div class="col-md-10 col-sm-9 columns">
-
-
-							<ul class="social-icons text-right">
-
-
-								<li>
-									<a href="#">
-										<i class="icon social_facebook"></i>
-									</a>
-								</li>
-
-
-							</ul>
-						</div>
-					</div>
-
-					<div class="mobile-toggle">
-						<i class="icon icon_menu"></i>
-					</div>
-
-				</div>
-			</nav>
+                        <li class="dropdown side_menu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages</a>
+                        </li>
 
 
 
+                        <li class="dropdown side_menu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contact</a>
+                            <!--<ul class="dropdown-menu">
+                                <li><a href="contact-us.html">Contact Us - 01</a></li>
+                                <li><a href="contact-us-2.html">Contact Us - 02</a></li>
+                              -->
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
 
+                <div class="company_contact_info">
+                    <div class="media">
+                        <div class="media-left">
+                            <img src="img/icon/mail-c.png" alt="">
+                        </div>
+                        <div class="media-body">
+                            <h4>info@cibovitam.com</h4>
+                            <h6>What do you need?</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <!--================Header Area =================-->
+        <header class="blog_menu_area white_tp_menu">
+            <div class="burger_menu">
+                <div class="row m0 display-flex">
+                    <div class="col-sm-2 col-xs-4 flex">
+                        <a href="#" class="blo-logo"><img src="img/CiboVitamLogo.png" alt=""></a>
+                    </div>
+                    <div class="col-sm-10 col-xs-8 text-right flex">
+                        <div class="w_menu_social">
 
+                            <ul>
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
 
+                        </div>
+                        <div class="burger_icon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
 
+        <div class="fixed_menu_area offcanvas_menu">
+            <div class="close_icon">
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="side_menu_social">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+            <a class="company_logo" href="#"><img src="img/company-logo.png" alt=""></a>
+            <div class="web_menu_inner">
+                <ul class="nav navbar-nav">
+                    <li class="click_submenu"><a href="#">Home</a>
+                        <ul>
+                            <li><a href="company.html">Company</a></li>
+                            <li><a href="company-website.html">Company-website</a></li>
+                            <li><a href="corporate-agency.html">Corporate Agency</a></li>
+                        </ul>
+                    </li>
+                    <li class="click_submenu"><a href="#">About</a>
+                        <ul>
+                            <li><a href="about-us.html">About us</a></li>
+                            <li><a href="about-us2.html">About us 02</a></li>
+                            <li><a href="about-us3.html">About us 03</a></li>
+                        </ul>
+                    </li>
+                    <li class="active click_submenu"><a href="#">Services</a>
+                        <ul>
+                            <li><a href="services.html">Services One</a></li>
+                            <li><a href="services-2.html">Services Two</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="recent-case.html">Cases</a></li>
+                    <li><a href="blog-1.html">News</a></li>
+                    <li><a href="contact-us.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="shop_icon">
+                <a class="buscate_icon" href="#"><img src="img/icon/buscate-icon.png" alt=""></a>
+                <a href="#"><img src="img/icon/search-c.png" alt=""></a>
+            </div>
+            <div class="company_contact_info">
+                <div class="media">
+                    <div class="media-left">
+                        <img src="img/icon/phone-icon-c.png" alt="">
+                    </div>
+                    <div class="media-body">
+                        <h4>(898) 930-903</h4>
+                        <h6>Monday- Friday. 8am- 8pm</h6>
+                    </div>
+                </div>
+                <div class="media">
+                    <div class="media-left">
+                        <img src="img/icon/mail-c.png" alt="">
+                    </div>
+                    <div class="media-body">
+                        <h4>info@cibovitam.com</h4>
+                        <h6>Drop us line!</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--================Header Area =================-->
+        <!--================Home Slider Area =================-->
+        <section class="startup-banner dzsparallaxer auto-init" data-options='{direction: "reverse"}' style="height: 100vh;">
+            <div class="divimage dzsparallaxer--target " style="width: 100%; height: 140%; background-image: url(img/startup/banner-img.jpg);background-size: cover;"></div>
+            <div class="container display-flex">
+                <div class="banner-text">
+                    <h2>  CiboVitam : Feed Life </h2>
+                    <h3> Your Framework for Nutrition in Preventive Care</h3>
+                    <!--<a href="#" class="btn buy_btn startup-btn">make me happy</a>-->
+                </div>
+            </div>
+        </section>
+        <!--================End Home Slider Area =================-->
+        <div class="simple-ads-area">
+            <div class="container-fluid">
+                <div class="row simple_inner">
+                    <div class="col-md-4 company_about_inner">
+                        <img src="img/startup/promo_food.jpg" alt="">
+                        <div class="content">
+                            <h2>Food</h2>
+                            <p>Every micronutrient and biochemical interaction.</p>
+                            <a href="#" class="popup-img"><i class="fa fa-plus"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 company_about_inner">
+                        <img src="img/startup/promo_economic.jpg" alt="">
+                        <div class="content">
+                            <h2>Economics</h2>
+                            <p>From a cup of sugar to the cost of a farm.</p>
+                            <a href="#" class="popup-img"><i class="fa fa-plus"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 company_about_inner">
+                        <img src="img/startup/promo_medicine.jpg" alt="">
+                        <div class="content">
+                            <h2>Medicine</h2>
+                            <p>Exchange and analysis between doctors, patients, researchers, and providers.</p>
+                            <a href="#" class="popup-img"><i class="fa fa-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <!--================Sart gradition area =================-->
 
-
-
-
-
-
-
-
-		</div>
-
-		<div class="main-container">
-			<header class="fullscreen-element no-pad centered-text">
-				<div class="background-image-holder parallax-background overlay">
-					<img class="background-image" alt="Background Image" src="img/berries.jpg">
-				</div>
-
-				<div class="container align-vertical">
-					<div class="row">
-						<div class="col-md-12 text-center">
-
-							<h1 class="text-white"><img src="img/cibo.png"></img><br></h1>
-              <h2 class="text-white">On Hold Helping Patients during the Pandemic<br></h2>
-	<h2 class="text-white">Relaunching Full Platform in November, 2020!!!<br></h2>
-						<h2 class="text-white">For inquiries: info@cibovitam.com<br></h2>
-						
-              <!--<h1 class="text-white">Prescribe Food</h1>-->
-
-
-
-						</div>
-					</div>
-				</div>
-			</header>
-		</div>
-
-		<div class="footer-container">
-
-
-
-
-		</div>
-
-		<script src="https://www.youtube.com/iframe_api"></script>
-		<script src="js/jquery.min.js"></script>
-        <script src="js/jquery.plugin.min.js"></script>
+        <!--
+        <section class="gradition_area gradition_area_two">
+            <div class="container">
+                <div class="main_title_two">
+                    <h2>Professional Care and Services
+                    <br><span>convenient and multipurpose </span></h2>
+                </div>
+                <div class="mackup-img">
+                    <img src="img/startup/mackbook-img.png" alt="">
+                </div>
+                <div class="row">
+                    <div class="col-sm-4 col-xs-4">
+                        <div class="gradition_item">
+                            <div class="round round2">
+                                <img src="img/icon/gradition-icon.png" alt="">
+                                <div class="number">
+                                    01
+                                </div>
+                            </div>
+                            <h3>Customizable modules</h3>
+                            <p>Quisque in neque a quam euismod</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-xs-4">
+                        <div class="gradition_item">
+                            <div class="round">
+                                <img src="img/icon/gradition-icon2.png" alt="">
+                                <div class="number">
+                                    02
+                                </div>
+                            </div>
+                            <h3>Convenient Site Creation</h3>
+                            <p>Etiam dapibus odio nisl, quis</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-xs-4">
+                        <div class="gradition_item">
+                            <div class="round last">
+                                <img src="img/icon/gradition-icon3.png" alt="">
+                                <div class="number">
+                                    03
+                                </div>
+                            </div>
+                            <h3>Powerful Options Panel</h3>
+                            <p>Etiam dapibus odio nisl, quis</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+      -->
+        <!--================End gradition area =================-->
+        <!--=============team area company=================-->
+        <!--
+        <section class="team_area_company cor_agency_team">
+            <div class="container">
+                <div class="main_title_two">
+                    <h2 data-line="Laptine">Our Professional Team Of Expert
+                    <br><span>flexible, convenient and multipurpose</span> Possibilities</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="single_team">
+                            <div class="profile_img pull-left">
+                                <img src="img/corporate-agency/team.jpg" alt="team">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="profile_content pull-left">
+                                <h6>Developer</h6>
+                                <h2>Roberto Dunhill</h2>
+                                <p>Lorem ipsum dolor sit amet, consec- tetur adipiscing elit. Cras aliquam sagittis ex, ac finibus lectus lacinia a. Mauris non ligula nec libero finibus blandit. </p>
+                                <a href="#"><i class="fa fa-long-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="single_team">
+                            <div class="profile_img pull-left">
+                                <img src="img/corporate-agency/team2.jpg" alt="team">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="profile_content pull-left">
+                                <h6>Developer</h6>
+                                <h2>Roberto Dunhill</h2>
+                                <p>Lorem ipsum dolor sit amet, consec- tetur adipiscing elit. Cras aliquam sagittis ex, ac finibus lectus lacinia a. Mauris non ligula nec libero finibus blandit. </p>
+                                <a href="#"><i class="fa fa-long-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+      -->
+        <!--=============team area company=================-->
+        <!--============contact_area============-->
+        <!--
+        <section class="contact_area cor-agency-contact startup-contact">
+            <div class="container">
+                <div class="main_title_two">
+                    <h2>I’m Always Please To Get a Couple of
+                    <br><span>words from the site</span> Visitors</h2>
+                </div>
+                <div class="row contact_info">
+                    <div class="col-md-4 col-sm-6">
+                        <p><span>You can find me here:</span><br>
+                            795 South Park Avenue, Melbourne, Australia</p>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <p><span>Monday t Friday from </span> 9.00 am to 8.00 pm EST</p>
+                        <p><span>Saturday from</span> 10.00 am to 6.00 pm EST</p>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <span class="colo_y">Phone:</span><a href="#">8 800 567.890.11 <br>Mexopixel@gmail.com</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <form class="office_contact_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
+                        <div class="form-group col-md-4">
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Your Name">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <input type="text" class="form-control" id="email" name="email" placeholder="Your Email Address">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <input type="text" class="form-control" id="subject" name="subject" placeholder="Your Website">
+                        </div>
+                        <div class="form-group col-md-12">
+                            <textarea class="form-control" name="message" id="message" rows="1" placeholder="Type in your message..."></textarea>
+                            <button type="submit" value="submit" class="btn p_btn">Send</button>
+                        </div>
+                    </form>
+                    <div id="success">Your message succesfully sent!</div>
+  				    <div id="error">Opps! There is something wrong. Please try again</div>
+                </div>
+            </div>
+        </section>
+      -->
+        <!--================Start ag Footer Area =================-->
+        <footer class="com_footer_area">
+          <!--
+            <div class="main_video_area">
+                <div class="container">
+                    <div class="main_video_inner color_violate">
+                        <a class="popup-youtube" href="https://www.youtube.com/watch?v=48uPk1SA37Y"><i class="fa fa-play-circle" aria-hidden="true"></i></a>
+                        <h2>CiboVitam<span>.</span></h2>
+                        <h6>Creative Agency from London - UK</h6>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</p>
+                    </div>
+                </div>
+            </div>
+          -->
+            <div class="com_footer_bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-7">
+                            <h4 class="f-text">©2020 CiboVitam Incorporated</h4>
+                        </div>
+                        <div class="col-md-6 col-sm-5">
+                            <ul class="f_social text-right">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--================End ag Footer Area =================-->
+        <!--================Search Box Area =================-->
+        <!--
+        <div class="search_area zoom-anim-dialog mfp-hide" id="test-search">
+            <div class="search_box_inner">
+                <h3>Search</h3>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search for...">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button"><i class="icon icon-Search"></i></button>
+                    </span>
+                </div>
+            </div>
+        </div>
+      -->
+        <!--================End Search Box Area =================-->
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="js/jquery-2.2.4.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="js/bootstrap.min.js"></script>
-        <script src="js/jquery.flexslider-min.js"></script>
-        <script src="js/smooth-scroll.min.js"></script>
-        <script src="js/skrollr.min.js"></script>
-        <script src="js/spectragram.min.js"></script>
-        <script src="js/scrollReveal.min.js"></script>
-        <script src="js/isotope.min.js"></script>
-        <script src="js/twitterFetcher_v10_min.js"></script>
-        <script src="js/lightbox.min.js"></script>
-        <script src="js/jquery.countdown.min.js"></script>
-        <script src="js/scripts.js"></script>
+        <!-- Rev slider js -->
+        <script src="vendors/revolution/js/jquery.themepunch.tools.min.js"></script>
+        <script src="vendors/revolution/js/jquery.themepunch.revolution.min.js"></script>
+        <script src="vendors/revolution/js/extensions/revolution.extension.video.min.js"></script>
+        <script src="vendors/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+        <script src="vendors/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+        <script src="vendors/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+        <script src="vendors/magnify-popup/jquery.magnific-popup.min.js"></script>
+        <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+        <script src="vendors/isotope/isotope.pkgd.min.js"></script>
+        <script src="vendors/dzsparallaxer/dzsparallaxer.js"></script>
+        <script src="vendors/bootstrap-datepicker/js/moment.js"></script>
+        <script src="vendors/bootstrap-datepicker/js/bootstrap-datetimepicker.min.js"></script>
+        <script src="vendors/jquery-ui/jquery-ui.js"></script>
+        <script src="js/smoothscroll.js"></script>
+        <!-- counter js-->
+        <script type="text/javascript" src="vendors/counterup/jquery.counterup.min.js"></script>
+        <script type="text/javascript" src="vendors/counterup/waypoints.min.js"></script>
+        <script type="text/javascript" src="vendors/circle-progress/circle-progress.js"></script>
+        <script type="text/javascript" src="vendors/counterup/countto.js"></script>
+        <script type="text/javascript" src="vendors/counterup/apear.js"></script>
+        <script type="text/javascript" src="vendors/lightbox/simpleLightbox.min.js"></script>
+        <script type="text/javascript" src="vendors/scroll/jquery.nicescroll.min.js"></script>
+        <script type="text/javascript" src="vendors/scroll/jquery.mCustomScrollbar.concat.min.js"></script>
+        <!-- owl carousel js-->
+        <script type="text/javascript" src="vendors/owl-carousel/owl.carousel.min.js"></script>
+        <script type="text/javascript" src="vendors/flexslider/jquery.flexslider.js"></script>
+        <!-- contact js -->
+        <script src="js/jquery.form.js"></script>
+        <script src="js/jquery.validate.min.js"></script>
+        <script src="js/contact.js"></script>
+        <script src="js/theme.js"></script>
     </body>
 </html>
